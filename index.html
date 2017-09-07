@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Online counter" />
+    <meta name="author" content="Valera Rozuvan" />
+
+    <title>Online counter</title>
+
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/body.css" rel="stylesheet" />
+    <link href="css/layout.css" rel="stylesheet" />
+    <link href="css/plus-minus-input.css" rel="stylesheet" />
+    <link href="css/gh-fork-ribbon.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a
+      class="github-fork-ribbon"
+      href="https://github.com/valera-rozuvan/online-counter"
+      data-ribbon="Fork me on GitHub"
+      title="Fork me on GitHub"
+    >Fork me on GitHub</a>
+
+    <div class="row">
+      <div class="columns">
+          <h3 class="align-center">Online counter</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <div class="demo-center">
+          <div class="input-group plus-minus-input">
+            <div class="input-group-button">
+              <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <input class="input-group-field" type="number" name="quantity" value="0">
+
+            <div class="input-group-button">
+              <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="love">
+          Made with <i class="fa fa-heart pulse"></i> by <a href="http://valera.rozuvan.net/">Valera Rozuvan</a>
+      </span>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/plus-minus-input.js"></script>
+  </body>
+</html>
