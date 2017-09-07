@@ -2,7 +2,7 @@
 
 Online counter - increase number with a button click.
 
-See live at [https:/valera-rozuvan.github.io/online-counter](https:/valera-rozuvan.github.io/online-counter).
+See live at [https://valera-rozuvan.github.io/online-counter](https://valera-rozuvan.github.io/online-counter).
 
 ## License
 
