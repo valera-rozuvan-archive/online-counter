@@ -1,18 +1,24 @@
+function increaseCounter(event) {
+    event.preventDefault();
+    var el = $("input[name=quantity]");
+    var e = parseInt(el.val());
+    isNaN(e) ? el.val(0) : el.val(e + 1);
+}
+
+function decreaseCounter(event) {
+    event.preventDefault();
+    var el = $("input[name=quantity]");
+    var e = parseInt(el.val());
+    (!isNaN(e) && e > 0) ? el.val(e - 1) : el.val(0);
+}
+
 jQuery(document).ready(function () {
-    $('[data-quantity="plus"]').click(function (a) {
-        a.preventDefault();
-        var fieldName = $(this).attr("data-field");
-        var el = $("input[name=" + fieldName + "]");
-        var e = parseInt(el.val());
-        isNaN(e) ? el.val(0) : el.val(e + 1);
+    $('[data-quantity="plus"]').click((event) => {
+        increaseCounter(event);
     });
 
-    $('[data-quantity="minus"]').click(function (a) {
-        a.preventDefault();
-        var fieldName = $(this).attr("data-field");
-        var el = $("input[name=" + fieldName + "]");
-        var e = parseInt(el.val());
-        (!isNaN(e) && e > 0) ? el.val(e - 1) : el.val(0);
+    $('[data-quantity="minus"]').click((event) => {
+        decreaseCounter(event);
     });
 
     $('#delete_02').click(function (a) {
@@ -23,5 +29,13 @@ jQuery(document).ready(function () {
         });
 
         $("#counter").addClass("centered");
+    });
+
+    $(document).on('keyup', (event) => {
+        if (event.key === "ArrowUp") {
+            increaseCounter(event);
+        } else if (event.key === "ArrowDown") {
+            decreaseCounter(event);
+        }
     });
 });
