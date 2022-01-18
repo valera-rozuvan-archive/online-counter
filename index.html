@@ -2,76 +2,78 @@
 
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="Online counter"/>
-    <meta name="author" content="Valera Rozuvan"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Online counter"/>
+  <meta name="author" content="Valera Rozuvan"/>
 
-    <title>Online counter</title>
+  <title>Online counter</title>
 
-    <link href="css/font-awesome.css" rel="stylesheet"/>
-    <link href="css/app.css" rel="stylesheet"/>
-    <link href="css/body.css" rel="stylesheet"/>
-    <link href="css/layout.css" rel="stylesheet"/>
-    <link href="css/plus-minus-input.css" rel="stylesheet"/>
-    <link href="css/gh-fork-ribbon.css" rel="stylesheet"/>
+  <link href="css/font-awesome.css" rel="stylesheet"/>
+  <link href="css/app.css" rel="stylesheet"/>
+  <link href="css/body.css" rel="stylesheet"/>
+  <link href="css/layout.css" rel="stylesheet"/>
+  <link href="css/plus-minus-input.css" rel="stylesheet"/>
+  <link href="css/gh-fork-ribbon.css" rel="stylesheet"/>
 </head>
 <body>
+
 <a
-    class="github-fork-ribbon"
-    href="https://github.com/valera-rozuvan/online-counter"
-    data-ribbon="Fork me on GitHub"
-    title="Fork me on GitHub"
-    id="delete_00"
+  class="github-fork-ribbon"
+  href="https://github.com/valera-rozuvan/online-counter"
+  data-ribbon="Fork me on GitHub"
+  title="Fork me on GitHub"
+  id="delete_00"
 >Fork me on GitHub</a>
 
 <div class="row" id="delete_01">
-    <div class="columns">
-        <h2 class="align-center">Online counter</h2>
-        <h6 class="align-center">increase number with a button click</h6>
-    </div>
+  <div class="columns">
+    <h2 class="align-center">Online counter</h2>
+    <h6 class="align-center">increase number with a button click</h6>
+  </div>
 </div>
 
 <div class="row zen" id="delete_02">[zen mode]</div>
 <div class="row" id="delete_03">&nbsp;</div>
 
 <div class="row" id="counter">
-    <div class="columns">
-        <div class="demo-center">
-            <div class="input-group plus-minus-input">
-                <div class="input-group-button">
-                    <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
-                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
-                    </button>
-                </div>
-
-                <input
-                        class="input-group-field"
-                        id="input-group-field"
-                        type="number"
-                        name="quantity"
-                        value="0"
-                        min=0
-                        oninput="validity.valid||(value='0');"
-                />
-
-                <div class="input-group-button">
-                    <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
-                        <i class="fa fa-arrow-up" aria-hidden="true"></i>
-                    </button>
-                </div>
-            </div>
+  <div class="columns">
+    <div class="demo-center">
+      <div class="input-group plus-minus-input">
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="minus" data-field="quantity">
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </button>
         </div>
+
+        <input
+          class="input-group-field"
+          id="input-group-field"
+          type="number"
+          name="quantity"
+          value="0"
+          min=0
+          oninput="validity.valid||(value='0');"
+        />
+
+        <div class="input-group-button">
+          <button type="button" class="button hollow circle" data-quantity="plus" data-field="quantity">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="footer" id="delete_04">
-      <span class="love">
-          Made with <i class="fa fa-heart pulse"></i> by <a href="https://valera.rozuvan.net/">Valera Rozuvan</a>
-      </span>
+  <span class="love">
+    Made with <i class="fa fa-heart pulse"></i> by <a href="https://valera.rozuvan.net/">Valera Rozuvan</a>
+  </span>
 </div>
 
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/plus-minus-input.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/plus-minus-input.js"></script>
+
 </body>
 </html>
